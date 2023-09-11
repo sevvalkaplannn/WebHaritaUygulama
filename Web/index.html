@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapping</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v8.0.0/ol.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="dist/jspanel.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="./datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="./DataTables-1.13.6/css/jquery.dataTables.css">
+
+
+
+</head>
+
+<body>
+
+    <nav>
+
+        <button id="addPointButton" class="ma-primary-button" href="">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+                  </svg>                  
+              Add Point
+            </span>
+          </button>
+
+        <button id="queryPointButton" class="ma-secondary-button" href="">            
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+                  </svg>                    
+          Query Point
+        </span>
+    </button>
+    </nav>
+
+
+    <div id="map"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ol@v8.0.0/dist/ol.js"></script>
+    <script src=" ./main.js "></script>
+    <script src="dist/jspanel.js"></script>
+    <script src="./datatables.min.js"></script>
+    <!-- optionally load jsPanel extensions -->
+    <script src="dist/extensions/contextmenu/jspanel.contextmenu.js"></script>
+    <script src="dist/extensions/hint/jspanel.hint.js"></script>
+    <script src="dist/extensions/modal/jspanel.modal.js"></script>
+    <script src="dist/extensions/tooltip/jspanel.tooltip.js"></script>
+    <script src="dist/extensions/dock/jspanel.dock.js"></script>
+
+
+</body>
+
+</html>

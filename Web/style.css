@@ -1,0 +1,132 @@
+html,
+body {
+    margin: 0;
+    padding: 0; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background: linear-gradient(78deg, cadetblue 0%, cadetblue 100%, cadetblue 100%);
+    height: 65px;
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 2;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+@media only screen and (max-width: 600px) {
+  nav{
+    justify-content: center;
+  }
+}
+
+
+#map {
+    flex-grow: 1;
+    position: relative;
+}
+
+.ma-primary-button {
+    height: 36px;
+    max-width: 1024px;
+    width: 140px;
+    font-weight: 400;
+    font-size: 13px;
+    background-color: #63a9c7;
+    color: white;
+    box-shadow: 0px 5px 20px #ffffff, 0px 5px 20px #fff;
+    transition: all ease 0.5s;
+    border: 1px solid #2059a9;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  .ma-primary-button:hover {
+    color: #24a8a1;
+    background-color: #ffffff;
+    border-color: #30abaf;
+    transform: translateY(-2px);
+    box-shadow: 0px 15px 30px #fff;
+  }
+  
+  .ma-secondary-button {
+    height: 36px;
+    max-width: 1024px;
+    width: 140px;
+    font-weight: 400;
+    font-size: 13px;
+    background-color: white;
+    color: #337190;
+    border-radius: 12px;
+    border: 1px solid #1b587e;
+    box-shadow: 0px 5px 20px #ffffff, 0px 5px 20px #fff;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    
+  }
+  
+  .ma-secondary-button:hover {
+    color: white;
+    background-color: #63a9c7;
+    border-color: #33646c;
+    transform: translateY(-2px);
+    box-shadow: 0px 15px 30px #fff;    
+}
+  
+
+.ma-primary-button span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; 
+  }
+
+  .ma-secondary-button span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; 
+  }
+
+  .ma-pop-up{
+    justify-content: center;
+    display: flex;
+    padding: 25px 25px;
+    gap: 2rem;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .ma-label{
+    font-size: 12px;
+    font-family: monospace;
+  }
+
+  .ma-input{
+    font-size: 12px;
+    font-family: monospace;
+    border-color: cadetblue;
+  }
+
+  .ma-save-button{
+    background-color: cadetblue;
+    border: cadetblue;
+    height: 25px;
+    color: white;
+    font-size: 12px;
+    font-family: monospace;
+  }
+
+  .ma-save-button:hover{
+    color: #24a8a1;
+    background-color: #a1ebea;
+    border-color: #30abaf;
+    transform: translateY(-2px);
+    box-shadow: 0px 15px 30px #2c818b;
+  }
+  .jsPanel-headerbar {
+    background-color: cadetblue;
+  }
